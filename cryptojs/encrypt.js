@@ -22,8 +22,15 @@ module.exports = function (RED) {
 				if(msg.payload) {
 					// debugging message
 					node.debug('Encrypting payload using '+node.algorithm);
-					// encrypt with CryptoJS
-					msg.payload = CryptoJS[node.algorithm].encrypt(msg.payload, node.key).toString();
+                                        if(node.algorithm == 'SM4'){
+                                                // encrypt with SM4
+                                                const JSSM4 = require("jssm4");
+                                                var sm4 = new JSSM4('123456');
+                                                msg.payload = sm4.encryptData_ECB(msg.payload);
+                                        }else{
+                                                // encrypt with CryptoJS                                                         
+                                                msg.payload = CryptoJS[node.algorithm].encrypt(msg.payload, node.key).toString();
+                                        }
 				} else {
 					// debugging message
 					node.trace('Nothing to encrypt: empty payload');
