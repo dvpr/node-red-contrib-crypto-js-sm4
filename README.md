@@ -11,11 +11,11 @@ This repo is forked from https://github.com/Drswith/node-red-contrib-crypto-js-p
 
 And added SM4 feature.
 
-# node-red-contrib-crypto-js-dynamic
+# node-red-contrib-crypto-js-sm4
 Node-RED nodes using CryptoJS to encrypt and decrypt messages
 
 # Install
-`npm install node-red-contrib-crypto-js-dynamic`
+`npm install https://github.com/dvpr/node-red-contrib-crypto-js-sm4.git`
 
 
 # Sample Flows
