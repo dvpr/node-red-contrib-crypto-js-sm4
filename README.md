@@ -7,9 +7,9 @@
  * @FilePath: \node-red-contrib-crypto-js-dynamic\README.md
 -->
 # NOTICE
-This repo is forked from https://github.com/Drswith/node-red-contrib-crypto-js-plus and https://github.com/baumblatt/node-red-contrib-crypto-js
+This repo is forked from https://github.com/Drswith/node-red-contrib-crypto-js-plus and https://github.com/baumblatt/node-red-contrib-crypto-js and https://github.com/vivekrp/node-red-contrib-crypto-js-dynamic
 
-And added dynamic secret key option for HMAC.
+And added SM4 feature.
 
 # node-red-contrib-crypto-js-dynamic
 Node-RED nodes using CryptoJS to encrypt and decrypt messages
@@ -36,6 +36,7 @@ Encrypt and Decrypt Nodes:
 * crypto-js/RC4
 * crypto-js/Rabbit
 * crypto-js/TripleDES
+* node-red-contrib-crypto-js-sm4
 
 Digest Node
 * crypto-js/md5
